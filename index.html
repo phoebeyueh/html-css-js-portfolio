@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phoebe's Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+</head>
+<body>
+    <nav id = "desktop-nav">
+        <div class="logo"> PHOEBE YUEH
+        </div>
+        <div>
+            <ul class="nav-links">
+                <li><a href = "#projects">Projects</a></li>
+                <li><a href = "#about">About</a></li>
+                <li><a href = "#skills">Skills</a></li>
+                <li><a href = "#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id = "hamburger-nav">
+        <div class = "logo"> PHOEBE YUEH </div>
+        <div class = "hamburger-menu">
+            <div class = "hamburger-icon" onclick = "toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class = "menu-links">
+                <li><a href = "#projects" onclick = "toggleMenu()">Projects</a></li>
+                <li><a href = "#about" onclick = "toggleMenu()">About</a></li>
+                <li><a href = "#skills" onclick = "toggleMenu()">Skills</a></li>
+                <li><a href = "#contact" onclick = "toggleMenu()">Contact</a></li>
+            </div>   
+        </div>
+    </nav>
+    <section id = "profile">
+        <div class ="section_pic-container">
+            <img src="./assets/profilepic.png" alt = "Phoebe's profile picture">
+        </div>
+        <div class = "section_text">
+            <p class = "section_text_p1">Hello, I'm</p>
+            <h1 class = "title"> PHOEBE YUEH </h1>
+            <p class = "section_text_p2">Data Science Student at UC Berkeley</p>
+            <div class = "btn-container">
+                <button class = "btn btn-color-2" onclick="window.open('./assets/resume.pdf')"> 
+                    Download CV 
+                </button>
+                <button class = "btn btn-color-1" onclick="location.href='./#contact'"> 
+                    Contact Me
+                </button>
+            </div>
+        <div id = "socials-container">
+            <img = src="./assets/linkedin.png" 
+            alt = "My LinkedIn Profile"
+            class = "icon" 
+            onclick = "location.href='https://www.linkedin.com/in/phoebeyueh/'"/>
+            <img = src="./assets/github.png" 
+            alt = "My Github Profile"
+            class = "icon" 
+            onclick = "location.href='https://github.com/phoebeyueh'"/>
+        </div>
+    </div>
+    </section>
+    <section id="projects">
+        <p class="section_text_p1">Browse My Recent</p>
+        <h1 class="title">Projects</h1>
+        <div class="experience-details-container">
+          <div class="about-containers">
+            <div class="details-container color-container">
+              <div class="article-container">
+                <img
+                  src="./assets/project1.png"
+                  alt="Project 1"
+                  class="project-img"
+                />
+              </div>
+              <h2 class="experience-sub-title project-title">Ad Campaign Analysis on 2016 Presidential Campaigns</h2>
+              <p class="experience-sub-title project-title">A Python-based exploratory data analysis and visualization project employing extensive data cleaning & transformation techniques.</p>
+              <div class="btn-container">
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href='https://github.com/phoebeyueh/200_presidential_campaign_analysis'"
+                >
+                  Github
+                </button>
+              </div>
+            </div>
+            <div class="details-container color-container">
+              <div class="article-container">
+                <img
+                  src="./assets/project2.jpeg"
+                  alt="Project 2"
+                  class="project-img"
+                />
+              </div>
+              <h2 class="experience-sub-title project-title">Analyzing Discrepancy in Voting Processes</h2>
+              <p class="experience-sub-title project-title">A statistical project in R, revealing differential voting difficulties using the Welch Two Sample t-test</p>
+              <div class="btn-container">
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href='https://github.com/phoebeyueh/203_statistics_discrepancy_in_voting_process/tree/main'"
+                >
+                  Github
+                </button>
+              </div>
+            </div>
+            <div class="details-container color-container">
+              <div class="article-container">
+                <img
+                  src="./assets/project3.jpeg"
+                  alt="Project 3"
+                  class="project-img"
+                />
+              </div>
+              <h2 class="experience-sub-title project-title">Behind Bars - The Unreported Crimes Experienced by Inmates</h2>
+              <p class="experience-sub-title project-title">A research design project to examine violent crimes within American prisons through a mixed research method</p>
+              <div class="btn-container">
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href='https://github.com/'"
+                >
+                  Report
+                </button>
+              </div>
+            </div>
+            <div class="details-container color-container">
+                <div class="article-container">
+                  <img
+                    src="./assets/project4.jpeg"
+                    alt="Project 3"
+                    class="project-img"
+                  />
+                </div>
+                <h2 class="experience-sub-title project-title">Screamingly Good Returns for Horror Movie Investments</h2>
+                <p class="experience-sub-title project-title">A statistical analysis in R that employs a Classical Linear Model to examine investment returns on horror movies</p>
+                <div class="btn-container">
+                  <button
+                    class="btn btn-color-2 project-btn"
+                    onclick="location.href='https://github.com/'"
+                  >
+                    Github
+                </button>
+                </div>
+            </div>
+            <div class="details-container color-container">
+                <div class="article-container">
+                  <img
+                    src="./assets/project5.png"
+                    alt="Project 3"
+                    class="project-img"
+                  />
+                </div>
+                <h2 class="experience-sub-title project-title">Customer Personality Analysis</h2>
+                <p class="experience-sub-title project-title">A Python-based machine learning project that utilizes clustering 4 models in the sklearn library to identify customer segments</p>
+                <div class="btn-container">
+                  <button
+                    class="btn btn-color-2 project-btn"
+                    onclick="location.href='https://github.com/phoebeyueh/207_customer_segmentation'"
+                  >
+                    Github
+                  </button>
+                </div>
+            </div>
+            <div class="details-container color-container">
+                <div class="article-container">
+                  <img
+                    src="./assets/project6.webp"
+                    alt="Project 3"
+                    class="project-img"
+                  />
+                </div>
+                <h2 class="experience-sub-title project-title">Guardians of the City: Introducing TorontoSafe</h2>
+                <p class="experience-sub-title project-title">A data visualization project utilizing Tableau, HTML, and CSS to facilitate crime data navigation in Toronto within a website</p>
+                <div class="btn-container">
+                  <button
+                    class="btn btn-color-2 project-btn"
+                    onclick="location.href='https://github.com/phoebeyueh/209_datavis_torontosafe'"
+                  >
+                    Github
+                  </button>
+                  <button
+                    class="btn btn-color-2 project-btn"
+                    onclick="location.href='https://groups.ischool.berkeley.edu/SafeTO/'"
+                  >
+                    Website
+                  </button>
+                </div>
+            </div>
+            
+          </div>
+        </div>
+        <img
+          src="./assets/down.png"
+          alt="Arrow icon"
+          class="icon arrow"
+          onclick="location.href='./#about'"
+        />
+      </section>
+      <section id="about">
+        <p class="section_text_p1">Get To Know More About</p>
+        <h1 class="title">My Experience</h1>
+        <div class="section-container">
+            <div class="details-container">
+                <img
+                    src="./assets/education.png"
+                    alt="Education icon"
+                    class="icon"
+                />
+                <h3>Education</h3>
+                <p>May 2025 (anticipated)<br />University of California, Berkeley - Master of Information and Data Science<br /><br /> September 2017 - November 2021<br />University of Toronto - Bachelor of Business Adminitration (Co-op), with Distinction<br /></p>
+            <img
+                src="./assets/down.png"
+                alt="Arrow icon"
+                class="icon arrow"
+                onclick="location.href='./#skills'"
+            />
+        </div>
+    </section>
+    <section id="skills">
+        <p class="section_text_p1">Explore My</p>
+        <h1 class="title">Skills and Tools</h1>
+        <div class = "skills-details-container">
+            <div class = "about-containers">
+                <div class = "details-container">
+                    <div class = "article-container">
+                        <article>
+                            <div>
+                                <h3>Data Visualization</h3>
+                                <p> PowerBI</p>
+                                <p> Tableau</p>
+                                <p> SAS</p>
+                                <p> Altair (Python)</p>
+                            </div>
+                        </article>
+                        <article>
+                            <div>
+                                <h3>Programming</h3>
+                                <p> Python</p>
+                                <p> R/RStudio</p>
+                                <p> SQL</p>
+                                <p> SAS</p>
+                            </div>
+                        </article>
+                        <article>
+                            <div>
+                                <h3>Machine Learning</h3>
+                                <p>Neural Networks</p>
+                                <p>Clustering</p>
+                                <p>Sentiment Analysis</p>
+                            </div>
+                        </article>
+                        <article>
+                            <div>
+                                <h3>Cloud Computing</h3>
+                                <p> Azure</p>
+                                <p> GCP</p>
+                                <p> AWS</p>
+                            </div>
+                        </article>
+                        <article>
+                            <div>
+                                <h3>Software Development Methodology</h3>
+                                <p> Agile</p>
+                                <p> Scrum</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        <img
+          src="./assets/down.png"
+          alt="Arrow icon"
+          class="icon arrow"
+          onclick="location.href='./#contact'"
+        />
+    </section>
+      <section id="contact">
+        <p class="section_text_p1">Get in Touch</p>
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-info-upper-container">
+          <div class="contact-info-container">
+            <img
+              src="./assets/gmail.png"
+              alt="Email icon"
+              class="icon contact-icon email-icon"
+            />
+            <p><a href="mailto:examplemail@gmail.com">phoebeyueh0401@gmail.com</a></p>
+          </div>
+          <div class="contact-info-container">
+            <img
+              src="./assets/linkedin.png"
+              alt="LinkedIn icon"
+              class="icon contact-icon"
+            />
+            <p><a href="https://www.linkedin.com/in/phoebeyueh/">LinkedIn</a></p>
+          </div>
+        </div>
+      </section>
+      <footer>
+        <nav>
+          <div class="nav-links-container">
+            <ul class="nav-links">
+              <li><a href="#about">About</a></li>
+              <li><a href="#skills">Skills</a></li>
+              <li><a href="#projects">Projects</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+        </nav>
+        <p>Copyright &#169; 2024 PHOEBE YUEH. All Rights Reserved.</p>
+      </footer>
+      <script src="script.js"></script>
+    </body>
+  </html>
