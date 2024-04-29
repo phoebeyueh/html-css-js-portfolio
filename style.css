@@ -394,6 +394,18 @@ article.icon {
     object-fit: cover; 
 }
 
+/* HOBBIES SECTION */
+
+#hobbies {
+    position: relative;
+  }
+  
+  .img-container img {
+      width: 400px; 
+      height: 500px; 
+      object-fit: cover; 
+  }
+
 /* CONTACT */
 
 #contact {
